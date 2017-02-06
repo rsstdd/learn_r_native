@@ -5,13 +5,24 @@ import { View, Text } from 'react-native';
 import axios from 'axios';
 
 class AlbumList extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      albums: []
+    };
+  }
 
   ComponentWillMount() {
-    axios.get('http://rallycoding.herokuapp.com/api/music_albums') // promise - ajax is inherenetly async
-      .then((res) => console.log(res));
+    axios.get('https://rallycoding.herokuapp.com/api/music_albums') // promise - ajax is inherenetly async
+      .then((res) => {
+        console.log(res.data);
+        this.setState({ albums: res.data });
+      });
   }
 
   render() {
+    console.log(this.state.albums);
     return (
       <View>
         <Text>AlbumList</Text>
