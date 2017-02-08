@@ -11,3 +11,6 @@ const App = () => (
 );
 
 AppRegistry.registerComponent('albums', () => App);
+
+
+// react-native run ios <-- to compile and launch the simulator

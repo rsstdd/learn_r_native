@@ -5,8 +5,8 @@ import { View, Text } from 'react-native';
 import axios from 'axios';
 
 class AlbumList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       albums: []
@@ -14,18 +14,25 @@ class AlbumList extends Component {
   }
 
   ComponentWillMount() {
-    axios.get('https://rallycoding.herokuapp.com/api/music_albums') // promise - ajax is inherenetly async
-      .then((res) => {
-        console.log(res.data);
-        this.setState({ albums: res.data });
+    axios.get('harrypotterapi.herokuapp.com/movies') // promise - ajax is inherenetly async
+      .then((response) => {
+        console.log('here');
+        console.log(response);
+        this.setState({ albums: response.data });
       });
+  }
+
+  renderAlbums() {
+    this.state.albums.map((album) => {
+      return <Text>{album.title}</Text>
+    });
   }
 
   render() {
     console.log(this.state.albums);
     return (
       <View>
-        <Text>AlbumList</Text>
+        {this.renderAlbums}
       </View>
       );
     }
