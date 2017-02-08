@@ -9,22 +9,262 @@ class AlbumList extends Component {
     super(props);
 
     this.state = {
-      albums: []
+      albums: [
+      {
+        "aliases": [
+            "The Daughter of the Dusk"
+        ],
+        "allegiances": [],
+        "books": [
+            "http://anapioficeandfire.com/api/books/5"
+        ],
+        "born": "",
+        "culture": "Braavosi",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/1"
+    },
+    {
+        "aliases": [
+            "Hodor"
+        ],
+        "allegiances": [
+            "http://anapioficeandfire.com/api/houses/362"
+        ],
+        "books": [
+            "http://anapioficeandfire.com/api/books/1",
+            "http://anapioficeandfire.com/api/books/2",
+            "http://anapioficeandfire.com/api/books/3",
+            "http://anapioficeandfire.com/api/books/5",
+            "http://anapioficeandfire.com/api/books/8"
+        ],
+        "born": "",
+        "culture": "",
+        "died": "",
+        "father": "",
+        "gender": "Male",
+        "mother": "",
+        "name": "Walder",
+        "playedBy": [
+            "Kristian Nairn"
+        ],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [
+            "Season 1",
+            "Season 2",
+            "Season 3",
+            "Season 4",
+            "Season 6"
+        ],
+        "url": "http://anapioficeandfire.com/api/characters/2"
+    },
+    {
+        "aliases": [
+            "Lamprey"
+        ],
+        "allegiances": [
+            "http://anapioficeandfire.com/api/houses/15"
+        ],
+        "books": [
+            "http://anapioficeandfire.com/api/books/3"
+        ],
+        "born": "",
+        "culture": "",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/3"
+    },
+    {
+        "aliases": [
+            "The Merling Queen"
+        ],
+        "allegiances": [],
+        "books": [
+            "http://anapioficeandfire.com/api/books/5",
+            "http://anapioficeandfire.com/api/books/8"
+        ],
+        "born": "",
+        "culture": "Braavosi",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/4"
+    },
+    {
+        "aliases": [
+            "Old Crackbones"
+        ],
+        "allegiances": [],
+        "books": [
+            "http://anapioficeandfire.com/api/books/5"
+        ],
+        "born": "",
+        "culture": "",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/5"
+    },
+    {
+        "aliases": [
+            "The Poetess"
+        ],
+        "allegiances": [],
+        "books": [
+            "http://anapioficeandfire.com/api/books/5"
+        ],
+        "born": "",
+        "culture": "Braavosi",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/6"
+    },
+    {
+        "aliases": [
+            "Porridge"
+        ],
+        "allegiances": [
+            "http://anapioficeandfire.com/api/houses/15"
+        ],
+        "books": [
+            "http://anapioficeandfire.com/api/books/3"
+        ],
+        "born": "",
+        "culture": "",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/7"
+    },
+    {
+        "aliases": [
+            "Quickfinger"
+        ],
+        "allegiances": [
+            "http://anapioficeandfire.com/api/houses/23"
+        ],
+        "books": [
+            "http://anapioficeandfire.com/api/books/6"
+        ],
+        "born": "",
+        "culture": "",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/8"
+    },
+    {
+        "aliases": [
+            "the Sailor's Wife"
+        ],
+        "allegiances": [],
+        "books": [
+            "http://anapioficeandfire.com/api/books/5"
+        ],
+        "born": "",
+        "culture": "",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/9"
+    },
+    {
+        "aliases": [
+            "The Veiled Lady"
+        ],
+        "allegiances": [],
+        "books": [
+            "http://anapioficeandfire.com/api/books/5"
+        ],
+        "born": "",
+        "culture": "Braavosi",
+        "died": "",
+        "father": "",
+        "gender": "Unknown",
+        "mother": "",
+        "name": "",
+        "playedBy": [],
+        "povBooks": [],
+        "spouse": "",
+        "titles": [],
+        "tvSeries": [],
+        "url": "http://anapioficeandfire.com/api/characters/10"
+    }
+  ]
     };
   }
 
-  ComponentWillMount() {
-    axios.get('harrypotterapi.herokuapp.com/movies') // promise - ajax is inherenetly async
-      .then((response) => {
-        console.log('here');
-        console.log(response);
-        this.setState({ albums: response.data });
-      });
-  }
+  // ComponentWillMount() {
+  //   axios.get('http://anapioficeandfire.com/api/characters') // promise - ajax is inherenetly async
+  //     .then((res) => {
+  //       this.setState({ albums: res.data });
+  //     });
+  // }
 
   renderAlbums() {
     this.state.albums.map((album) => {
-      return <Text>{album.title}</Text>
+      return <Text>{album.title}</Text>;
     });
   }
 
