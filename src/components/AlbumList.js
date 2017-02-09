@@ -5,15 +5,15 @@ import { View, Text } from 'react-native';
 import axios from 'axios';
 
 class AlbumList extends Component {
-  constructor(props) {
-    super(props);
+  // constructor() {
+  //   super();
 
-    this.state = {
+    state = {
       albums: []
     };
 
-    this.renderAlbums = this.renderAlbums.bind(this);
-  }
+  //   this.renderAlbums = this.renderAlbums.bind(this);
+  // }
 
   // ComponentWillMount - Invoked immediately before mounting occurs.
   // It is called before render( ), therefore,
@@ -25,22 +25,24 @@ class AlbumList extends Component {
     // promise - ajax is inherenetly async
     axios.get('https://rallycoding.herokuapp.com/api/music_albums')
       .then((res) => this.setState({ albums: res.data }))
-      .catch(() => console.log('Failed Api Call'));
+      .catch((err) => console.log('Failed Api Call', err));
   }
 
   renderAlbums() {
-    this.state.albums.map((album) => {
-      // do not use the index in an array as the key because it will not rerender correctly
-      // an id would be ideal
-      return <Text key={album.title}>{album.title}</Text>;
-    });
+    // do not use the index in an array as the key because it will not rerender correctly
+    // an id would be ideal  // const albumList =
+
+    const albumList = this.state.albums.map(album => <Text key={album.title}>{album.title}</Text>);
+
+    return albumList;
   }
 
   render() {
     console.log(this.state.albums);
     return (
       <View>
-        {this.renderAlbums}
+        {this.renderAlbums()}
+        {/* {this.state.albums.map((album) => <Text key={album.title}>{album.title}</Text>)} */}
       </View>
       );
     }
